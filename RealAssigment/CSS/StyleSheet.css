@@ -1,0 +1,78 @@
+﻿* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: red;
+}
+
+#page {
+    width: 1000px;
+    margin: auto;
+    background-color: red;
+    min-height: 500px;
+}
+
+#menu {
+    /*height: 50px;
+    width: 100px;*/
+    text-align: center;
+   
+}
+
+#content {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+
+a, a:visited {
+    color: black;
+}
+
+
+
+#menu ul li {
+    list-style-type: none;
+    height: 55px;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+#menu li {
+    float: none;
+    border-right: 2px solid #ff0000;
+}
+
+#menu ul li a {
+    display : block;
+    color : red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menu a:hover {
+    color: white;
+}
+
+#menu .active{
+    background-color : slategrey;
+    color : aqua;
+}
+
+
+
+/*The style below will apply to the element with an
+id of "header" */
+#header {
+    width: 100%;
+    height: 100px;
+    background-image: url('../Images/1200px-Supreme_Logo.svg.png');
+    background-repeat:no-repeat;
+    background-size: auto;
+    background-position: center
+    
+}

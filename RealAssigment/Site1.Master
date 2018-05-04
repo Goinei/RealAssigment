@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="RealAssigment.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server">
+         </asp:ContentPlaceHolder>
+
+    </title>
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body{
+            height: 100%;
+            margin : 0;
+            padding:0;
+        }
+    </style>
+</head>
+<body runat="server">
+ <div id="page">
+<div id="header">
+<h1>
+    <asp:ContentPlaceHolder ID="Heading1" runat="server">
+            </asp:ContentPlaceHolder>
+
+</h1>
+</div>
+ <div id="menu">
+<ul>
+<li><a href="~/Default.aspx" runat="server">Home</a></li>
+<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
+<li><a href="~/Login.aspx" runat="server">Login</a></li>
+
+</ul>
+</div>
+
+<div id="content">
+<h2>
+    <asp:ContentPlaceHolder ID="Heading2" runat="server">
+            </asp:ContentPlaceHolder>
+</h2>
+    <asp:ContentPlaceHolder ID="MainContant" runat="server">
+            </asp:ContentPlaceHolder>
+
+</div>
+</div>
+     <asp:ContentPlaceHolder ID="googleMap" runat="server">
+            </asp:ContentPlaceHolder>
+    <div id="footer">
+        <p>Copyright of 1626486/j39734</p>
+        <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> |
+<a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> |
+<a href="Admin/index" runat="server">Admin</a>
+    </div>
+</body>
+
+</html>
+
